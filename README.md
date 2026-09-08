@@ -18,7 +18,7 @@ npm run build
 npm run audit
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` to the final HTTPS origin in production so the site emits canonical URLs, an indexable robots policy and a populated sitemap.
+The production site uses `https://thewellisnotempty.com`. Keep `NEXT_PUBLIC_SITE_URL` set to this origin in Vercel so the site emits matching canonical URLs, an indexable robots policy and a populated sitemap.
 
 ## Content note
 
