@@ -1,0 +1,23 @@
+# dependencies
+/node_modules/
+
+# Next.js build output
+/.next/
+/out/
+
+# Vercel project binding
+/.vercel/
+
+# local environment files
+.env*
+!.env.example
+
+# generated reports and caches
+/reports/*.json
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+
