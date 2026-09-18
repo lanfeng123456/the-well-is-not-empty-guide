@@ -4,6 +4,7 @@ import Image from "next/image";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { DM_Sans, Libre_Caslon_Display } from "next/font/google";
 import { SiteHeader } from "@/components/SiteHeader";
+import { AdBanner } from "@/components/AdBanner";
 import { REVIEW_DATE, SITE_NAME, SITE_URL, STEAM_URL } from "@/lib/config";
 import "./globals.css";
 import "./sections.css";
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <a className="skip-link" href="#main">Skip to guide</a>
         <SiteHeader />
         {children}
+        <AdBanner />
         <footer>
           <div><Link className="brand footer-brand" href="/"><Image className="brand-icon" src="/icon-512.png" width={36} height={36} alt=""/><span>The Well <b>Is Not Empty</b></span></Link><p>Independent, evidence-aware guides for the released PC game.</p></div>
           <div><p><b>Launch-build review</b><br/>Public Build 25157827<br/>Reviewed {REVIEW_DATE}</p></div>
